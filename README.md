@@ -8,7 +8,7 @@ A modern, responsive Todo application built with React.js featuring dark/light t
 
 ## 🚀 Live Demo
 
-[**👉 Live App**](https://todo-app-eight-wield-9a.vercel.app)
+[**👉 Live App**](https://todo-app-eight-weld-94.vercel.app/)
 
 ## 📸 Screenshots
 
