@@ -1,0 +1,255 @@
+/* NavForm Container */
+.navform-container {
+  width: 100%;
+}
+
+.navform-header {
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navform-light {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.navform-dark {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+/* Form Title */
+.navform-title {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Form Layout - All in one line */
+.navform-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Common Input Styles */
+.navform-input,
+.navform-select,
+.navform-date {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  height: 42px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.navform-input:focus,
+.navform-select:focus,
+.navform-date:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.navform-input {
+  flex: 2;
+  min-width: 250px;
+}
+
+.navform-select {
+  flex: 1;
+  min-width: 140px;
+}
+
+.navform-date {
+  flex: 1;
+  min-width: 160px;
+}
+
+/* Input Themes */
+.input-light {
+  background: white;
+  color: #2c3e50;
+  border: 2px solid transparent;
+}
+
+.input-dark {
+  background: #2d3748;
+  color: white;
+  border: 2px solid #4a5568;
+}
+
+.input-light:focus {
+  border-color: #667eea;
+}
+
+.input-dark:focus {
+  border-color: #4299e1;
+}
+
+/* Checkbox Label */
+.navform-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  font-size: 14px;
+  height: 42px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.navform-checkbox-label:hover {
+  transform: translateY(-2px);
+}
+
+/* Checkbox */
+.navform-checkbox {
+  transform: scale(1.2);
+}
+
+/* Button - More Prominent */
+.navform-button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  min-width: 130px;
+  height: 42px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navform-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.navform-button:active {
+  transform: translateY(-1px);
+}
+
+.button-light {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+}
+
+.button-light:hover {
+  background: linear-gradient(135deg, #27ae60, #219653);
+}
+
+.button-dark {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: white;
+}
+
+.button-dark:hover {
+  background: linear-gradient(135deg, #38a169, #2f855a);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navform-form {
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .navform-input,
+  .navform-select,
+  .navform-date,
+  .navform-checkbox-label,
+  .navform-button {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navform-header {
+    padding: 12px 15px;
+  }
+  
+  .navform-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .navform-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .navform-input,
+  .navform-select,
+  .navform-date,
+  .navform-checkbox-label,
+  .navform-button {
+    width: 100%;
+    max-width: 400px;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navform-header {
+    padding: 10px 10px;
+  }
+  
+  .navform-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .navform-input,
+  .navform-select,
+  .navform-date,
+  .navform-checkbox-label,
+  .navform-button {
+    padding: 8px 12px;
+    font-size: 13px;
+    height: 40px;
+  }
+  
+  .navform-button {
+    font-size: 13px;
+    min-width: 110px;
+  }
+}
+
+/* Focus States for Accessibility */
+.navform-input:focus,
+.navform-select:focus,
+.navform-date:focus,
+.navform-checkbox:focus {
+  outline: none;
+}
+
+/* Placeholder Color */
+.input-dark::placeholder {
+  color: #a0aec0;
+}
+
+.input-light::placeholder {
+  color: #718096;
+}
