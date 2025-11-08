@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# 📝 Professional Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive Todo application built with React.js featuring dark/light theme, category-based filtering, and progress tracking.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+[**👉 Live App**](https://todo-app-eight-wield-9a.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Light Theme | Dark Theme |
+|<img width="1898" height="918" alt="image" src="https://github.com/user-attachments/assets/04991b76-626d-4bfc-8bb0-6c339ede8aea" />
+|<img width="1880" height="903" alt="image" src="https://github.com/user-attachments/assets/1a8e77f5-1912-4bd0-9d28-606acaf97a65" />|
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🎯 Core Functionality
+- ✅ **Add, Complete, Delete** tasks
+- 📅 **Due dates** with smart reminders
+- 🔔 **Reminder system** for important tasks
+- 📊 **Progress tracking** with visual statistics
 
-### `npm run build`
+### 🎨 User Experience
+- 🌙 **Dark/Light theme** toggle
+- 📱 **Fully responsive** design
+- 🎪 **Smooth animations** and hover effects
+- 💾 **Local storage** persistence
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔧 Advanced Features
+- 🗂️ **Category-based filtering** (All, My Day, Personal, Work, Health, Deleted)
+- 📈 **Real-time progress** with percentage and charts
+- ⚡ **Fast performance** with React optimization
+- ♿ **Accessibility** focused design
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React.js, JavaScript (ES6+)
+- **Styling**: CSS3 with Flexbox/Grid
+- **State Management**: React Hooks (useState, useEffect, useContext)
+- **Storage**: Browser LocalStorage
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/KETAN-MALI123/todo-app.git
+   cd todo-app
+   
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🏗️ Project Structure
+text
+src/
+├── components/
+│   ├── NavBar.js & NavBar.css
+│   ├── NavForm.js & NavForm.css
+│   ├── TodoList.js & TodoList.css
+│   ├── ThemeContext.js & ThemeContext.css
+│   └── ThemeToggle.js
+├── App.js
+├── App.css
+└── index.js
 
-## Learn More
+### Steps to Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🎯 Key Components
+NavBar
+Category navigation with counts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Theme toggle switch
 
-### Code Splitting
+Responsive design for mobile
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+NavForm
+Task creation with category selection
 
-### Analyzing the Bundle Size
+Due date picker and reminder options
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Form validation
 
-### Making a Progressive Web App
+TodoList
+Task display with completion status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Progress statistics
 
-### Advanced Configuration
+Filtered views by category
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ThemeContext
+Global theme management
 
-### Deployment
+LocalStorage persistence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+System preference detection
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔮 Future Enhancements
+- User authentication
+- Backend integration
+- Task sharing
+- Push notifications
+- Data export/import
+
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1 Fork the project
+2 Create your feature branch (git checkout -b feature/AmazingFeature)
+3 Commit your changes (git commit -m 'Add some AmazingFeature')
+4 Push to the branch (git push origin feature/AmazingFeature)
+5 Open a Pull Request
+
+
+👨‍💻 Author
+Ketan Mali
+
+GitHub: @KETAN-MALI123
+Project: Todo App
+
+📄 License
+This project is open source and available under the MIT License.
+
+
+⭐ Star this repo if you found it helpful!
